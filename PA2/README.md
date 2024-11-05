@@ -1,7 +1,7 @@
 
 # Overview
 
-JHU CIS 1 - Programming Assignment 2 
+### JHU CIS 1 - Programming Assignment 2 
 ### Authors - Harshal Gajjar, Aleks Santari
 
 This project provides a set of Python modules and classes designed for calibrating, registering, and transforming 3D data points in various coordinate systems. It handles pivot calibration, distortion correction, and fiducial point tracking, which are essential for navigation and positioning tasks in scenarios requiring precision alignment, such as medical imaging or robotics.
