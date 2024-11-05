@@ -3,17 +3,17 @@ import PointCloud as pc
 
 def find_freg(ctfiducials, Cs):
     """
-    Returns the transformation from tracker coordinates to CT coordinates.
+    Calculates the transformation from tracker coordinates to CT coordinates.
 
-    :param ctfiducials: The file name/path of the file with positions of each fiducial pin in the CT frame
-    :param Cs: A PointCloud of computed positions for the pointer tip relative to the EM tracker frame for each frame of
-               data
-
+    :param ctfiducials: Path to the file containing the positions of each fiducial pin in the CT coordinate system
+    :param Cs: A PointCloud instance representing the computed positions of the pointer tip relative to the EM tracker frame for each data frame
+    
     :type ctfiducials: str
     :type Cs: PointCloud.PointCloud
-
-    :return: The frame transformation from tracker to CT coordinates
+    
+    :return: A frame transformation from tracker coordinates to CT coordinates
     :rtype: Frame.Frame
+
     """
 
     load_fid = pc.inp_file(ctfiducials)
