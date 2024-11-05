@@ -2,14 +2,14 @@ import PointCloud as pc
 
 def c_expected(calbody, calreading):
     """
-    Computes expected EM marker positions on a calibration object, given measured positions of markers on the object
-    and data from each tracker.
-
-    :param calbody: Path to the calibration object data file
-    :param calreading: Path to the tracker readings file
-
-    :return: List of expected positions of EM tracking markers on the calibration object for each frame
+    Calculates the expected positions of EM markers on a calibration object based on measured marker positions and tracker data.
+    
+    :param calbody: Path to the file containing calibration object data
+    :param calreading: Path to the file with tracker readings
+    
+    :return: A list of expected EM marker positions on the calibration object for each frame
     :rtype: list of PointCloud.PointCloud
+
     """
     # Load the tracker and object data from files
     tracker_data = pc.inp_file(calreading)
