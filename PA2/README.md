@@ -8,7 +8,7 @@ This project provides a set of Python modules and classes designed for calibrati
 
 ## File Descriptions
 
-### 1. `pivot_cal.py`
+### 1. `pivot_calibration.py`
 Implements methods for pivot calibration using a collection of point clouds. This module helps in accurately determining the position of the pivot point in a tool or instrument, which is essential for tracking and aligning in 3D space.
 
 ### 2. `Frame_Transformation.py`
