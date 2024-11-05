@@ -20,13 +20,13 @@ This module includes functions for correcting distortion in point cloud data, wh
 ### 5. `calc_expected_Ci.py`
 This script calculates the "expected" values for the dataset `C` in a distortion calibration setting. It is primarily used to validate or benchmark distortion-corrected coordinates against idealized values.
 
-### 6. `ComputeFiducials_prob4.py`
-Given a set of frames where an EM probe is positioned at fiducial points and a corrected pivot calibration, this module applies distortion correction to each frame. The output is a set of fiducial locations within the coordinate system of the tracking base, effectively aligning the fiducials with a global reference frame.
+### 6. `calc_Bj.py`
+Computes the position of the pointer tip in EM coordinates using calibration and fiducial data, correctioned for distortions.
 
 ### 7. `calc_Freg.py`
 This module calculates the registration transformation that aligns points between two coordinate systems. Given a set of fiducials in CT coordinates and their equivalents in EM tracker space, it computes the best-fit transformation matrix to align these points.
 
-### 8. `ComputeCTTip_prob6.py`
+### 8. `compute_tip_loc.py`
 Calculates the position of the probe tip in CT coordinates based on multiple poses of the probe. Using these arbitrary probe positions, it determines the tip location, which can be useful for tracking or positioning tasks in CT space.
 
 ### 9. `Driver.py`
